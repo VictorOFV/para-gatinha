@@ -146,6 +146,9 @@ function sticker() {
     .querySelector(".js-up-paper")
     .addEventListener("click", envelop_transition);
   document.querySelector(".js-up-paper").classList.add("cursor");
+
+  const audio = document.getElementById('musica');
+  audio.play().catch(err => console.warn("Autoplay bloqueado:", err));
 }
 
 document.querySelector(".js-sticker").addEventListener("click", sticker);
