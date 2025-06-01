@@ -15,9 +15,12 @@ $fi-color: #e2e2e2;
   height: 100%;
   bottom: 0;
   left: 0;
-  @if ($p == a) {
+
+  @if ($p ==a) {
     position: absolute;
-  } @else if($p == r) {
+  }
+
+  @else if($p ==r) {
     position: relative;
   }
 }
@@ -80,16 +83,24 @@ body {
   right: 0;
   margin: auto;
 
+  @media (min-width: 300px) and (max-width: 400px) {
+    width: 18rem;
+    height: 12rem;
+  }
+
   @media (min-width: 400px) and (max-width: 600px) {
     width: 20rem;
     height: 15rem;
   }
+
   @media (min-width: 600px) {
     width: 25rem;
     height: 20rem;
   }
+
   @media (min-width: 600px) and (min-height: 600px) {
     bottom: 20%;
+
   }
 
   &__front-paper {
@@ -136,6 +147,7 @@ body {
     @media (max-width: 400px) {
       background-size: 1.2rem;
     }
+
     @media (min-width: 600px) {
       height: 15%;
     }
@@ -160,6 +172,7 @@ body {
     @media (max-width: 400px) {
       background-size: 1.2rem;
     }
+
     @media (min-width: 600px) {
       height: 15%;
     }
@@ -217,6 +230,7 @@ body {
       @media (min-width: 300px) and (max-width: 600px) {
         font-size: 1.025rem;
       }
+
       @media (min-width: 600px) {
         font-size: 1.15rem;
       }
@@ -226,6 +240,7 @@ body {
 
 .scissors {
   cursor: url("https://i.postimg.cc/GtLCdKxR/sisors.png"), pointer;
+
   &:active {
     cursor: url("https://i.postimg.cc/GtXQ7WPZ/pngwing-com.png"), pointer;
   }
